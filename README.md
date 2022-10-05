@@ -1,5 +1,5 @@
-# HQ Apps Websit
+# HQ Apps Store
 
-Dis iz de official Repo of de HQ Apps websit!!
+Dis iz de official Repo of de HQ Apps moblie STORE!!
 
-### Wisit itt NAUW attt https://hqapps.tk/
+### prewiew itt NAUW attt https://m.hqapps.tk/

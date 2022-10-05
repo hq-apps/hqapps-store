@@ -1,17 +1,11 @@
-baseURL: 'http://hqapps.tk/'
+baseURL: 'http://m.hqapps.tk/'
 languageCode: 'en-us'
 title: 'HQ Apps'
 
-theme: "hqapps"
+theme: "store"
 
 markup:
   goldmark:
     renderer:
-      unsafe: true
-      
-outputFormats:
-  downloads:
-    baseName: dl
-    isPlainText: true
-    mediaType: text/html
-    path: dl
+      unsafe: false
+

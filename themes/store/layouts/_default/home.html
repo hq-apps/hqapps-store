@@ -1,33 +1,23 @@
 {{ define "main" }}
     <h1>MOST BEST!</h1>
 
-    <section class="slideshow">
+    <section>
         {{ range $index, $element := $.Site.Data.homepage.mostbest.gudpages }}
-        <div class="slide-wrapper">
-            <a href="{{ .URL }}">
-                <div class="slide" onlick="window.location.href = '{{ .URL }}'">
-                    <div class="infoarea" id="slide-{{ $index }}">
-                        <h1>{{ .Title }}</h1>
-                        <p>{{ .Description }}</p>
-                   </div>
-                   <img src="{{ .img }}" alt="" class="background">
+        <a href="{{ .URL }}" style="width: 100%; max-width: 400px;">
+            <div class="card mb-3" style="width: 100%;">
+                <div class="row g-0">
+                  <div class="col">
+                    <img src="{{ .img }}" class="img-fluid rounded m-2" alt="..." style="aspect-ratio: 1/1; width: 6em;">
+                  </div>
+                  <div class="col-10">
+                    <div class="card-body">
+                      <h5 class="card-title">{{ .Title }}</h5>
+                      <p class="card-text"><small class="text-muted">{{ .Description }}</small></p>
+                    </div>
+                  </div>
                 </div>
+              </div>
             </a>
-            <div class="slide-points">
-                            {{ range $index2, $element2 := $.Site.Data.homepage.mostbest.gudpages }}
-                                <a href="#slide-{{ $index2 }}" class="slide-point {{ if eq $index $index2 }}slide-point-active{{ end }}"></a>
-                            {{ end }}
-            </div>
-        </div>
         {{ end }}
     </section>
-    
-    
-    <script src="/js/slideshow_scroll.js"></script>
-    <script src="/js/cursor.js" defer></script>
-    <script>window.location = "/apps"</script>
-{{ end }}
-
-{{ define "extra" }}
-<div id="cursor"><img src="/clickhere.gif" alt=""></div>
 {{ end }}

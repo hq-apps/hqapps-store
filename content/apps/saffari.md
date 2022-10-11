@@ -5,6 +5,7 @@ draft: false
 hqappid: stable
 icon: /icon.png
 screenshots: [/saffari edd.png.jpg, helo, /hqapps.png, /icon.png]
+dlLink: https://hqdl.tk/stable
 ---
 
 <!DOCTYPE html>

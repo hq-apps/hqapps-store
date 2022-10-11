@@ -1,16 +1,12 @@
 <footer>
+  {{ $current := . }}
   <ul class="nav nav-pills nav-fill p-3 fixed-bottom hqstore-btm-bar">
+    {{ range .Site.Menus.bottom }}
     <li class="nav-item">
-      <a class="nav-link active" aria-current="page" href="#">Epps</a>
+      {{ $active := or ($current.IsMenuCurrent "nav" .) ($current.HasMenuCurrent "nav" .) }}
+      {{ $active = or $active (eq .Name $current.Title) }}
+      <a class='nav-link {{ if $active }} active {{ end }}' href="{{ .URL }}">{{ .Name }}</a>
     </li>
-    <li class="nav-item">
-      <a class="nav-link" href="#">Gamz!</a>
-    </li>
-    <li class="nav-item">
-      <a class="nav-link" href="#">Updatz!</a>
-    </li>
-    <li class="nav-item">
-      <a class="nav-link disabled">Setting</a>
-    </li>
+    {{ end }}
   </ul>
 </footer>

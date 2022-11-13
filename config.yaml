@@ -9,21 +9,20 @@ markup:
     renderer:
       unsafe: false
 
+taxonomies:
+ - tag: ["Cummunication", "Efficeny"]
+
 menu:
-  bottom:
+  nav:
+  - identifier: featured
+    name: Featured
+    title: Featured
+    pageref: /
   - identifier: apps
-    name: Epps
-    title: HQ APPS APPS
-    url: /apps/
-  - identifier: games
-    name: Gamz!
-    title: gaymes
-    url: /games/
-  - identifier: update
+    name: All
+    title: All Apps
+    url: /apps
+  - Identifier: update
     name: Updatz!
     title: Updatz!
-    url: /update/
-  - identifier: settings
-    name: Setting
-    title: Setting
-    url: /settings/
+    pageref: /update

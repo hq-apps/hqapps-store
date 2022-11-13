@@ -1,11 +1,9 @@
 <footer>
   {{ $current := . }}
   <ul class="nav nav-pills nav-fill p-3 fixed-bottom hqstore-btm-bar">
-    {{ range .Site.Menus.bottom }}
+    {{ range site.Menus.nav }}
     <li class="nav-item">
-      {{ $active := or ($current.IsMenuCurrent "nav" .) ($current.HasMenuCurrent "nav" .) }}
-      {{ $active = or $active (eq .Name $current.Title) }}
-      <a class='nav-link {{ if $active }} active {{ end }}' href="{{ .URL }}">{{ .Name }}</a>
+      <a class='nav-link {{ if $current.IsMenuCurrent "nav" . }} active {{ end }}' href="{{ .URL }}">{{ .Name }}</a>
     </li>
     {{ end }}
   </ul>

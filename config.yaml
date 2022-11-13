@@ -2,7 +2,7 @@ baseURL: 'http://m.hqapps.tk/'
 languageCode: 'en-us'
 title: 'HQ Apps'
 
-theme: "store"
+theme: "hq-store-hugo-theme"
 
 markup:
   goldmark:

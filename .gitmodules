@@ -1,0 +1,3 @@
+[submodule "themes/hq-store-hugo-theme"]
+	path = themes/hq-store-hugo-theme
+	url = https://github.com/hq-apps/hq-store-hugo-theme.git

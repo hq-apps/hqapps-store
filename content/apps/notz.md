@@ -5,6 +5,8 @@ draft: false
 description: Cuul Epp
 icon: /notz.png
 screenshots: [/notz.ong.png, /hqapps.png]
+hqid: notz
+androidid: "appinventor.ai_saffariteam.notz"
 ---
 
 # notz

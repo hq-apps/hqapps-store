@@ -2,12 +2,13 @@
 title: "Saffari"
 date: 2022-08-21T13:11:04+02:00
 draft: false
-hqappid: stable
+hqid: stable
 icon: /icon.png
 screenshots: [/saffari edd.png.jpg, helo, /hqapps.png, /icon.png]
 dlLink: https://hqdl.tk/stable
 tags:
   - Cummunication
+androidid: "appinventor.ai_saffariteam.Browser"
 ---
 
 <!DOCTYPE html>

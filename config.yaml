@@ -12,6 +12,11 @@ markup:
 taxonomies:
  - tag: ["Cummunication", "Efficeny"]
 
+outputs:
+  page: ["html", "json"]
+  section: ["html", "json"]
+  home: ["html", "json"]
+
 menu:
   nav:
   - identifier: featured
